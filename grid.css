@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: burlywood;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  main {
+    justify-content: center;
+    place-items: center;
+   grid-template-areas: "a b c";
+  }
+  main div {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+  }
+  .left {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    grid-area: a;
+  }
+  .middle {
+    background-color: hsl(184, 100%, 22%);
+    text-align: center;
+    grid-area: b;
+  }
+  .right {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    grid-area: c;
+  }
+  .name {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: hsl(0, 0%, 95%);
+    font-family: "lexend deca", sans-serif;
+    font-weight: 400;
+  }
+  .paragraphs {
+    padding-top: 1em;
+    padding-bottom: 3em;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: " big shoulders display", cursive;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  button {
+    background-color: hsl(0, 0%, 95%);
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 4em;
+    border: 1px white;
+     ;
+     margin-bottom: 2em;
+  
+    cursor: pointer;
+  }
+  
+  .btn1 {
+    color: hsl(31, 77%, 52%);
+  }
+  .btn2 {
+    color: hsl(184, 100%, 22%);
+  }
+  .btn3 {
+    color: hsl(179, 100%, 13%);
+  }
+  .images {
+    padding-top: 2em;
+    margin-right: 4em;
+  }
+  button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  /* for desktop */
+  @media screen and (max-width: 1440px) {
+    main {
+      width: 50%;
+      height: 50%;
+      display: flex;
+    }
+    .paragraphs {
+      font-size: 15px;
+    }
+  }
+  /* for mobile */
+  @media screen and (max-width: 375px) {
+    main {
+      width: 100%;
+    }
+    .head {
+      padding-top: 1px  
+    
+    }
+    main {
+      display: flex;
+      min-height: 100vh;
+    }
+    .paragraphs {
+      font-size: 8px;
+    }
+  }
+  
