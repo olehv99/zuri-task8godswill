@@ -8,36 +8,49 @@
   }
   main {
     width: 50%;
+    
     margin: auto;
     display: flex;
-    height: 100vh;
+      height: 100vh;  
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex: wrap;
+  
   }
   .left {
     background-color: hsl(31, 77%, 52%);
     border-top-left-radius: 5px;
-    width: 50%;
+    width: 100%;
     margin-top: 10em;
     border-bottom-left-radius: 5px;
     text-align: center;
+    height: 60%;
+    /* flex-direction: column; */
+    
+    
   }
   .middle {
     background-color: hsl(184, 100%, 22%);
-    width: 50%;
+    width: 100%;
     margin-top: 10em;
     text-align: center;
+    height: 60%;
+    /* flex-direction: column; */
+    
+    
   }
   .right {
     background-color: hsl(179, 100%, 13%);
     border-top-right-radius: 5px;
     margin-top: 10em;
     border-bottom-right-radius: 5px;
-    width: 50%;
-  
+    width: 100%;
     text-align: center;
+    height: 60%;
+    /* flex-direction: column; */
+    
+  
+    
   }
   .name {
     padding-top: 2em;
@@ -54,6 +67,7 @@
     font-family: " big shoulders display", cursive;
     font-weight: 700;
     font-size: 15px;
+    
   }
   button {
     background-color: hsl(0, 0%, 95%);
@@ -86,7 +100,7 @@
     color: white;
   }
   /* for desktop */
-  @media screen and (max-width: 1440px) {
+   /* @media screen and (max-width: 1440px) 
     main {
       width: 50%;
       height: 50%;
@@ -95,11 +109,16 @@
     .paragraphs {
       font-size: 15px;
     }
-  }
+  } */
   /* for mobile */
   @media screen and (max-width: 375px) {
     main {
-      width: 100%;
+      width: 80%;
+      margin: 100% auto;
+      
+      display: flex;
+      
+      
     }
     .head {
       padding-top: 1px;
@@ -108,11 +127,29 @@
       padding-bottom: 1px;
     }
     main {
-      display: flex;
-     min-height:100vh;
+      box-sizing: border-box;
+     
+     flex-direction: column;
     }
     .paragraphs {
-      font-size: 8px;
+     font-size: 15px;
     }
+nav{
+  text-align: center;
+  padding: 2em;
+}
+.left{
+  padding-bottom: 2em;
+}
+.middle{
+  margin:0;
+  
+}
+.right{
+  margin: 0;
+}
+.btn2{
+  margin-bottom: 4em;
+}
   }
   
